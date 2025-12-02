@@ -4,6 +4,7 @@ import numpy as np
 from openpi_client import image_tools
 from openpi_client.runtime import environment as _environment
 from typing_extensions import override
+from typing import Optional
 
 
 class AlohaSimEnvironment(_environment.Environment):

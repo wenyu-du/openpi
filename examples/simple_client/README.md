@@ -26,5 +26,6 @@ uv run examples/simple_client/main.py --env DROID
 Terminal window 2:
 
 ```bash
-uv run scripts/serve_policy.py --env DROID
+XLA_PYTHON_CLIENT_MEM_FRACTION=0.85 uv run scripts/serve_policy.py
+# uv run scripts/serve_policy.py --env DROID
 ```
