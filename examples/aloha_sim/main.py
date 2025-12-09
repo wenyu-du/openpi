@@ -21,6 +21,9 @@ class ActionPrinterSubscriber(_subscriber.Subscriber):
         logging.info("ActionPrinter: 开始新回合。")
 
     def on_step(self, observation: dict, action: dict) -> None:
+        logging.info(f"机器人的images observation是:{observation['images']}")
+        logging.info(f"机器人的state observation是:{observation['state']}")
+        
         logging.info(f"机器人接收到的动作: {action}")
 
     def on_episode_end(self) -> None:
